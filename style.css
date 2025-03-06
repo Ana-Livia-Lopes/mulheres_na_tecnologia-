@@ -6,14 +6,20 @@
 #secao1 {
     background: url('./img/baban.png') no-repeat center center;
     background-size: cover;
-    height: 600px;
+    height: 500px;
     width: 100%;
     position: relative;
     border-radius: 3px;
 }
 #secao1 h2{
-    color:#ffbde2;
+    position: absolute;
+    margin-top: 150px;
+    color:#ffffff;
    text-align: center;
+   left: 23%;
+   right: 23%;
+   font-size: 40px;
+   text-shadow: black 0.1em 0.1em 0.2em
 }
 #secao2{
     margin-top: 50px;
