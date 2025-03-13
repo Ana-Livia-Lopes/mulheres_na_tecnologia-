@@ -8,8 +8,62 @@
     background-size: cover;
     height: 500px;
     width: 100%;
-    position: relative;
+    text-align:center;
+    color: rgb(253, 250, 238);
+    font-weight:500;
+    font-size:29px;
+    padding-top:2em;
+    height:83vh;
+    overflow:hidden;
 }
+.div {
+    font-family: 'Montserrat', sans-serif;
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    margin-top: 170px;
+    color:#ffffff;
+   text-align: center;
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   font-size: 47px;
+   text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.div:first-of-type, #secao1 h1:first-of-type{    
+    animation: showup 12s forwards;
+}
+
+.div:last-of-type {
+    width:0px;
+    animation: reveal 8s forwards;
+}
+
+.div:last-of-type span {
+    animation: slidein 8s forwards;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:-30px; }
+    100% { margin-left:-30px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:675px;}
+
+    100% {opacity:1;width:675px;}
+}
+
 #secao1 h2{
     position: absolute;
     margin-top: 170px;
@@ -163,7 +217,7 @@ p {
 }
 
 .animation div:first-child {
-  animation: text-animation 8s infinite;
+  animation: text-animation 6s infinite;
 }
 
 .first div {
